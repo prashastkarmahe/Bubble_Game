@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(127, 180, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 80vh;
+    width: 80vw;
+    background-color: bisque;
+    border-radius:2.5rem ;
+    box-shadow: 2px 2px 20px 5px rgba(18, 2, 82, 0.661);
+    
+}
+.box_upper{
+    height: 13%;
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius:2.5rem 2.5rem 0rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    width: 10vw ;
+    color: white;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    width: 10vw ;
+    color: white;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    width: 10vw ;
+    color: white
+}
+.small_box{
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.box_lower{
+    height: 87%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius:0rem 0rem 2.5rem 2.5rem;
+    padding-left: 25px;
+    border: 2px solid black;
+    border-top: 0px;
+    overflow: hidden;
+}
+.bubble{
+    color: rgb(12, 24, 131);
+    height: 6.5vh;
+    width: 6.5vh;
+    margin: 10px;
+    background-color: rgb(176, 231, 98);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+}
+.bubble:hover{
+    background-color: rgba(25, 146, 136, 0.973);
+    cursor: pointer;
+    -ms-transform: sclae(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+.game_start{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.game_title{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.start_box{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-4rem);
+    /* flex-direction: column; */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+#game-time {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: white;
+    outline: none;
+}
+
+.start-button {
+    padding: 10px 20px;
+    height: 7vh;
+    background-color:rgb(108, 234, 94); 
+    color: #9b2def;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.start-button:hover {
+    background-color: #8023d1;
+    color: #1fee29;
+}
+/* Correct ,incorrect and game-over class gets added via JS */
+.correct {
+    background-color: rgb(80, 230, 80);
+    animation: flash 1s ease-in-out;
+}
+.incorrect {
+    background-color: rgba(253, 0, 0, 0.866);
+    animation: flash 1s ease-in-out;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    animation: flash 1s ease-in-out;
+}
+.game-over h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.game-over p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0c5acf;
+    color: rgb(20, 240, 152);
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.restart-button:hover {
+    background-color: #18e926;
+}
